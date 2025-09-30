@@ -1,0 +1,28 @@
+{
+  "name": "simple-git-tool",
+  "version": "1.0.0",
+  "description": "A simplified git implementation with core upload/download functionality",
+  "main": "src/cli.js",
+  "bin": {
+    "sgit": "./src/cli.js",
+    "sgit-server": "./src/server.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "server": "node src/server.js",
+    "test": "node test/test.js",
+    "install-global": "npm install -g .",
+    "uninstall-global": "npm uninstall -g simple-git-tool"
+  },
+  "keywords": ["git", "version-control", "simple", "cli"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "preferGlobal": true,
+  "files": [
+    "src/",
+    "README.md"
+  ]
+}
